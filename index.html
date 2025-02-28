@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href = "style.css">
+    <title>Calculatror using Grid</title>
+</head>
+<body>
+    <div class="container">
+        <div class="nav"> Calculator</div>
+        <input type="text" class="screen" readonly>
+
+        <div class="buttons">
+            <button class="hash" data-value="AC">AC</button>
+            <button class="hash" data-value="⌫">⌫</button>
+            <button class="hash" data-value="%">%</button>
+            <button class="operator" data-value="÷">÷</button>
+
+            <button data-value="7">7</button>
+            <button data-value="8">8</button>
+            <button data-value="9">9</button>
+            <button class="operator"    data-value="x">x</button>
+
+            <button data-value="4">4</button>
+            <button data-value="5">5</button>
+            <button data-value="6">6</button>
+            <button class="operator"    data-value="-">-</button>
+
+            <button data-value="1">1</button>
+            <button data-value="2">2</button>
+            <button data-value="3">3</button>
+            <button class="operator" data-value="+">+</button>
+
+            <button class="col-span" data-value="0">0</button>
+            <button data-value=".">.</button>
+            <button class="operator" data-value="=">=</button>
+        </div>
+    </div>
+    
+    
+     <!-- mathjs is used instead of eval() function which calculates in arbitary manner and unsafe -->
+      <!-- below script tag is for using of mathjs -->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjs/11.11.1/math.js"></script>
+      <script src="script.js"></script>
+
+</body>
+</html>
